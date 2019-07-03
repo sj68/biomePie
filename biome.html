@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+  <script src="/script.js"></script>
+
+</head>
+
+<body>
+
+  <canvas id="chart" width="1000" height="500"></canvas>
+
+  <select id="levelSelect">
+    <option value="2">Level 2</option>
+    <option value="3">Level 3</option>
+    <option value="4">Level 4</option>
+    <option value="5">Level 5</option>
+    <option value="6">Level 6</option>
+    <option value="7">Level 7</option>
+  </select>
+
+  <select id="locationSelect">
+      <option value="51"> Location 51</option>
+      <option value="53"> Location 53</option>
+      <option value="54"> Location 54</option>
+      <option value="55"> Location 55</option>
+      <option value="56"> Location 56</option>
+      <option value="57"> Location 57</option>
+      <option value="58"> Location 58</option>
+      <option value="59"> Location 59</option>
+  </select>
+
+  <button onclick="newChart()">Select</button>
+
+</body>
+</html>
