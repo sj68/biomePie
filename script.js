@@ -60,7 +60,7 @@ function makeChart(data){
         display: false
       },
       // Ensure size is as specified in canvas
-      responsive: false
+      responsive: true
     }
   })
 }
