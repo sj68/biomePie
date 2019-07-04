@@ -10,7 +10,7 @@ function getRandomColor() {
 
 // Automatically load level 2, location 51 data when HTML is first opened
 window.onload = function(){
-  d3.csv("jslevel-2.csv").then(makeChart);
+  d3.csv("https://raw.githubusercontent.com/sj68/biomePie/master/jslevel-2.csv").then(makeChart);
 }
 
 
@@ -20,7 +20,7 @@ var pie_chart;
 
 function newChart(){
 
-  var csvFile = "jslevel-" + document.getElementById("levelSelect").value +".csv"
+  var csvFile = "https://raw.githubusercontent.com/sj68/biomePie/master/jslevel-" + document.getElementById("levelSelect").value + ".csv"
   d3.csv(csvFile).then(makeChart);
 }
 
@@ -59,7 +59,6 @@ function makeChart(data){
       legend: {
         display: false
       },
-      // Ensure size is as specified in canvas
       responsive: true
     }
   })
